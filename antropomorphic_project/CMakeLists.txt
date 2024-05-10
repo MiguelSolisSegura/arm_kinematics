@@ -152,6 +152,10 @@ include_directories(
 ## Install ##
 #############
 
+install(PROGRAMS scripts/elipsoidal_motion.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 install(PROGRAMS scripts/generate_matrixes.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
@@ -161,6 +165,18 @@ install(PROGRAMS scripts/fk_antropomorphic_arm.py
 )
 
 install(PROGRAMS scripts/ik_antropomorphic_arm.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(PROGRAMS scripts/antropomorphic_end_effector_mover.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(PROGRAMS scripts/move_joints.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(PROGRAMS scripts/rviz_marker.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
